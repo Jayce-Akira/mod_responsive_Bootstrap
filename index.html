@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <title>Bootstrap</title>
+</head>
+
+<body >
+    
+  <!--Header/nav  a mettre dans la classe navbar : data-spy="affix" data-offset-top="250" pour un menu en apparition en haut de page--> 
+<div class="container">
+
+  <header class="p-3 bg-dark text-white" id="header">
+   
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+        <div class="container">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bootstrap"
+              viewBox="0 0 16 16">
+              <path
+                d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+              <path
+                d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+            </svg>
+          </a>
+          <a href="#" class="nav-link px-2 text-white">Home</a>
+          <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item text-center">
+                <a href="#" class="nav-link px-2 text-white">Features</a>
+              </li>
+              <li class="nav-item text-center">
+                <a href="#" class="nav-link px-2 text-white">Pricing</a>
+              </li>
+              <li class="nav-item text-center">
+                <a href="#" class="nav-link px-2 text-white">FAQs</a>
+              </li>
+              <li class="nav-item text-center">
+                <a href="#" class="nav-link px-2 text-white">About</a>
+              </li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    
+
+
+  </header>
+  <!--Corp de la page-->
+  <section>
+ <!-- si on veut enlever l'effet fermeture automatique enlever la classe parent-->
+    <div class="row">
+      <div class="col-md-6">
+          <h2>Cv Déroulant</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum perspiciatis rem aliquid maxime repudiandae inventore natus cumque recusandae corporis pariatur praesentium ullam, molestiae laboriosam. Ducimus veniam illo explicabo ipsam aspernatur? Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid veniam delectus quidem, eos magnam eum quo. Iste delectus rerum veniam quos alias id facilis consequatur? Nihil similique minima nisi itaque? Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil magnam assumenda perferendis, quam voluptate commodi asperiores exercitationem sunt nostrum eaque, qui quaerat nisi quis enim doloremque tenetur possimus fugiat. Minus. Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Accordion Item #4
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum perspiciatis rem aliquid maxime repudiandae inventore natus cumque recusandae corporis pariatur praesentium ullam, molestiae laboriosam. Ducimus veniam illo explicabo ipsam aspernatur? Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Accordion Item #5
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum perspiciatis rem aliquid maxime repudiandae inventore natus cumque recusandae corporis pariatur praesentium ullam, molestiae laboriosam. Ducimus veniam illo explicabo ipsam aspernatur? Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      <div class="col-md-6">
+        <h2>Lettre de Motivation</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officia temporibus delectus quod? Enim nesciunt illum nostrum doloremque non delectus natus ab quae harum. Eligendi tempora quae ipsum libero aperiam.
+       Hic amet labore autem accusamus ducimus sequi quidem cupiditate officiis voluptatum molestias recusandae impedit quae, quia sit delectus voluptates odio. Veniam, voluptas! Corporis, doloremque iusto rerum illum ipsum natus corrupti!</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus maxime quos quo obcaecati harum quis, accusamus dolor. Neque dolorum, hic cumque quo asperiores odio alias temporibus. Quam voluptas cum perferendis.
+       Repellendus amet quae quos alias omnis corrupti magni facilis ut voluptatem, aut dolorem. Qui enim recusandae consequuntur alias cumque labore, pariatur excepturi officiis? Ad eos, alias blanditiis tempora eligendi in?</p>
+      </div>
+    </div>
+    </br></br>
+    <h2>Pour me Contacter</h2>
+
+ <div class="formContact">
+    <form>
+      <!-- 2 column grid layout with text inputs for the first and last names -->
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form6Example1" class="form-control" />
+            <label class="form-label" for="form6Example1">Prénom</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form6Example2" class="form-control" />
+            <label class="form-label" for="form6Example2">Nom</label>
+          </div>
+        </div>
+      </div>
+
+   
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form6Example3" class="form-control" />
+        <label class="form-label" for="form6Example3">Société</label>
+      </div>
+    
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Addresse</label>
+      </div>
+    
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form6Example5" class="form-control" />
+        <label class="form-label" for="form6Example5">Email</label>
+      </div>
+    
+      <!-- Number input -->
+      <div class="form-outline mb-4">
+        <input type="number" id="form6Example6" class="form-control" />
+        <label class="form-label" for="form6Example6">Téléphone</label>
+      </div>
+    
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+        <label class="form-label" for="form6Example7">Information Supplémentaire</label>
+      </div>
+    
+      <!-- Checkbox 
+      <div class="form-check d-flex justify-content-center mb-4">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          value=""
+          id="form6Example8"
+          checked
+        />
+        <label class="form-check-label" for="form6Example8"> Create an account? </label>
+      </div>-->
+    
+      <!-- Submit button -->
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-secondary" type="button">Envoyer</button>
+      </div>
+    </form>
+</div>
+
+
+  </section>
+
+
+
+<!--Footer-->
+  
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a class="text-muted" href="/" >
+          <i class="bi bi-bootstrap-fill" style="color: black;">
+            <use xlink:href="#bootstrap" />
+          </i>
+        </a>
+        <span class="text-muted ms-3">&copy; 2021 Company, Inc</span>
+      </div>
+
+      <ul class="nav  justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter" style="color: rgb(29, 155, 240);">
+              <use xlink:href="#twitter" />
+            </i></a></li>
+        <li class="ms-3"><a  href="#"><i class="bi bi-instagram"  style="  color: transparent;
+          background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          background-clip: text;
+          -webkit-background-clip: text;">
+              <use xlink:href="#instagram" />
+            </i></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook" style="color: rgb(24, 119, 242);">
+              <use xlink:href="#facebook" />
+        </i></a></li>
+        <use xlink:href="#facebook" /></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+
+<div class="topScreen">
+  <a href="#header"><i class="bi bi-caret-up-square-fill" style="color: rgba(0, 0, 0, 0.7)"></i></a>
+</div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
